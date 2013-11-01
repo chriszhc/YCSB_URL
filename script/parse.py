@@ -2,7 +2,7 @@ import sys
 
 num_urls = 1000
 
-f=open("../urls/small_1000.txt", 'r')
+f=open("../input.txt", 'r')
 count = 0
 urls = {}
 for line in f :
@@ -23,4 +23,4 @@ for line in sys.stdin :
             print cols[0], urls[firstUrl], urls[lastUrl], numUrl
         else :
             print cols[0], urls[firstUrl]
-
+#
