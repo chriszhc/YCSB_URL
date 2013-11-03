@@ -1,0 +1,6 @@
+../urls/large_urls_1M.txt
+1000000
+../output_ycsb/loade_1K.dat
+../output_ycsb/txnse_1K.dat
+../output_urls/loade_urls_1K.dat
+../output_urls/txnse_urls_1K.dat
