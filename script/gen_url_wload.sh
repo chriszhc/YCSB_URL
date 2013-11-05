@@ -8,16 +8,16 @@ OUT_URL_DIR="../output_urls"
 SCRIPT_DIR="."
 
 # Configurable arguments
-RECORD_COUNT="recordcount=1000"
-RECORD_COUNT_FILE="small_1k.dat"
+RECORD_COUNT="recordcount=1000000"
+RECORD_COUNT_FILE="huge_1M.dat"
 
 # Property file arguments
 URL_INPUT="large_urls_1M.txt"
 URL_SAMPLE_SIZE=1000000
-LOAD_YCSB="loade_1K.dat"
-TXN_YCSB="txnse_1K.dat"
-LOAD_URL="loade_urls_1K.dat"
-TXN_URL="txnse_urls_1K.dat"
+LOAD_YCSB="loade_1M.dat"
+TXN_YCSB="txnse_1M.dat"
+LOAD_URL="loade_urls_1M.dat"
+TXN_URL="txnse_urls_1M.dat"
 
 # Workload specification
 WORKLOAD="workloade"
@@ -28,7 +28,7 @@ URLMAP_ARGS="urlMapArgs.property"
 
 function set_recordcount ()
 {
-    echo RECORD_COUNT > $SCRIPT_DIR
+    echo RECORD_COUNT > $SCRIPT_DIR/$RECORD_COUNT_FILE
 }
 
 function set_property ()
