@@ -8,8 +8,8 @@ OUT_URL_DIR="../output_urls"
 SCRIPT_DIR="."
 
 # Configurable arguments
-RECORD_COUNT="recordcount=1000000"
-RECORD_COUNT_FILE="huge_1M.dat"
+RECORD_COUNT=1000000
+OPERATION_COUNT=1000000
 
 # Property file arguments
 URL_INPUT="large_urls_1M.txt"
@@ -41,11 +41,11 @@ function set_property ()
     echo $OUT_URL_DIR/$TXN_URL >> $1
 }
 
-set_recordcount
+#set_recordcount
 
-$YCSB_DIR/bin/ycsb load basic -P $YCSB_DIR/workloads/$WORKLOAD -P $SCRIPT_DIR/$RECORD_COUNT_FILE -s > $OUT_YCSB_DIR/$LOAD_YCSB
+$YCSB_DIR/bin/ycsb load basic -P $YCSB_DIR/workloads/$WORKLOAD -p recordcount=$RECORD_COUNT -s > $OUT_YCSB_DIR/$LOAD_YCSB
 
-$YCSB_DIR/bin/ycsb run basic -P $YCSB_DIR/workloads/$WORKLOAD -P $SCRIPT_DIR/$RECORD_COUNT_FILE -s > $OUT_YCSB_DIR/$TXN_YCSB
+$YCSB_DIR/bin/ycsb run basic -P $YCSB_DIR/workloads/$WORKLOAD -p operationcount=$OPERATION_COUNT -s > $OUT_YCSB_DIR/$TXN_YCSB
 
 set_property $SCRIPT_DIR/$URLMAP_ARGS
 
