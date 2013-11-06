@@ -24,6 +24,7 @@ WORKLOAD="workloade"
 
 # URL MAP Program
 URLMAP="urlMap.py"
+URLMAP_RANDOM="urlMap_random.py"
 URLMAP_ARGS="urlMapArgs.property"
 
 function set_recordcount ()
@@ -49,4 +50,6 @@ $YCSB_DIR/bin/ycsb run basic -P $YCSB_DIR/workloads/$WORKLOAD -p operationcount=
 
 set_property $SCRIPT_DIR/$URLMAP_ARGS
 
-python $SCRIPT_DIR/$URLMAP $SCRIPT_DIR/$URLMAP_ARGS
+#python $SCRIPT_DIR/$URLMAP $SCRIPT_DIR/$URLMAP_ARGS
+
+python $SCRIPT_DIR/$URLMAP_RANDOM $SCRIPT_DIR/$URLMAP_ARGS
