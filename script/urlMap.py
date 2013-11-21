@@ -42,7 +42,7 @@ f_txn = open (args[3], 'r')
 f_txn_out = open (args[5], 'w')
 for line in f_txn :
     cols = line.split()
-    if (cols[0] == "SCAN") or (cols[0] == "INSERT") :
+    if (cols[0] == "SCAN") or (cols[0] == "INSERT") or (cols[0] == "READ") or (cols[0] == "UPDATE"):
         if cols[2][4:] in key_url_map:
             starturl = key_url_map[cols[2][4:]]
         if cols[0] == "SCAN" :
