@@ -1,4 +1,4 @@
-../urls/large_urls_1M.txt
+../urls/random_urls_1M.dat
 1000000
 ../output_ycsb/loade_1M.dat
 ../output_ycsb/txnse_1M.dat

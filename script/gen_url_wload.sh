@@ -8,11 +8,11 @@ OUT_URL_DIR="../output_urls"
 SCRIPT_DIR="."
 
 # Configurable arguments
-RECORD_COUNT=10000
-OPERATION_COUNT=10000
+RECORD_COUNT=1000000
+OPERATION_COUNT=1000000
 
 # Property file arguments
-URL_INPUT="large_urls_1M.txt"
+URL_INPUT="random_urls_1M.dat"
 URL_SAMPLE_SIZE=1000000
 LOAD_YCSB="loade_1M.dat"
 TXN_YCSB="txnse_1M.dat"
