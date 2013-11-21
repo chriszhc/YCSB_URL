@@ -14,4 +14,9 @@ https://dl.dropboxusercontent.com/u/14532517/seq_url_2M.dat
 3. 4 million sequentialy selected
 https://dl.dropboxusercontent.com/u/14532517/seq_urls_4M.dat
 
+We REVERSE the hostnames in the above urls and store them here
+1. https://www.dropbox.com/s/lxkrfj9o952a0uy/large_urls_1M.txt_reverse.txt
+2. https://www.dropbox.com/s/h1tysgsxn23kzwh/seq_url_2M.dat_reverse.txt
+3. https://www.dropbox.com/s/zlbqctey7zb7bea/seq_urls_4M.dat_reverse.txt
+
 and you can download it, and put it into urls folder, change generate scripts, you are good to go :)
